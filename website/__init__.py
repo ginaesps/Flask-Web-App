@@ -13,7 +13,7 @@ def create_app():
     #__name__ represents the name of the file or file that was ran
     app = Flask(__name__)
     # the secret key encodes the cookies and session data
-    app.config['SECRET_KEY'] = 'regina123'
+    app.config['SECRET_KEY'] = '123'
     app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///{DB_NAME}"
     db.init_app(app)
 
